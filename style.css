@@ -49,6 +49,7 @@ body {
     gap: 30px;
     flex-direction: row;
     justify-content: center;
+    overflow: visible;
 }
 
 #caixa__email {
@@ -71,4 +72,17 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+.imagem-fundo {
+    background-image: url('./assets/ebook.png');
+    background-size: contain; /* Ajusta a imagem ao tamanho do elemento */
+    background-position: right; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    position: absolute; /* Permite que a imagem seja posicionada em relação à caixa */
+    top: 90px; /* Move a imagem para cima */
+    left: 50%;
+    width: 50%; /* Largura total da caixa */
+    height: 50%; /* Altura total da caixa */
+    z-index: -1; /* Coloca a imagem atrás da caixa */
 }
