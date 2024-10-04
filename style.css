@@ -1,36 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
+:root {
+    --cor-principal: white;
+    --cor-botao:#EA047E;
+    --cor-planodefundo: #15B392;
+    --cor-caixa:#254336;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #15B392;
+    background-color: var(--cor-planodefundo);
     font-family: dosis;
-    color: white;
+    color: var(--cor-principal);
     box-sizing: content-box;
 }
 
 .cabecalho {
     font-family: "Dosis", system-ui;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     font-style: normal;
 
     display: flex;
     gap: 10px;
 
-    margin-top: 50px;
-    margin-left: 300px;
+    margin-top: 3.125rem;
+    margin-left: 18.75rem;
 
 }
 
 .conteudo {
-    background-color: #254336;
-    margin: 100px 0px 300px 350px;
-    padding: 30px 60px 30px 60px;
-    border-radius: 30px 30px 30px 0 ;
+    background-color: var(--cor-caixa);
+    margin: 6.25rem 0px 18.75rem 21.875rem;
+    padding: 1.875rem 3.75rem 1.875rem 3.75rem;
+    border-radius: 1.875rem 1.875rem 1.875rem 0 ;
     width: 30%;
     
     display: flex;
@@ -40,7 +48,7 @@ body {
 }
 
 .conteudo__titulo {
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: left;
 }
 
@@ -53,30 +61,30 @@ body {
 }
 
 #caixa__email {
-    height: 50px;
+    height: 3.125rem;
     width: 50%;
     background-color: transparent;
-    color: white;
+    color: var(--cor-principal);
 }
 
 .botao__download {
-    background-color: #EA047E;
+    background-color: var(--cor-botao);
     width: 30%;
-    padding: 16px 40px;
-    border-radius: 30px 0px 30px 30px;
+    padding: 1rem 2.5rem;
+    border-radius: 1.875rem 0px 1.875rem 1.875rem;
     text-align: center; 
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--cor-principal);
 }
 
 .imagem-fundo {
-    background-image: url('./assets/ebook.png');
-    background-size: contain; /* Ajusta a imagem ao tamanho do elemento */
+    background-image: url('./assets/ebook.png'); /*Foi necessário criar uma div para colocar ela dentro*/
+    background-size: contain; /* Ajusta a imagem ao tamanho do elemento, colocando o contain permanece a imagem completa */
     background-position: right; /* Centraliza a imagem */
     background-repeat: no-repeat;
     position: absolute; /* Permite que a imagem seja posicionada em relação à caixa */
