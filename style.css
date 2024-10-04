@@ -4,8 +4,8 @@
 :root {
     --cor-principal: white;
     --cor-botao:#EA047E;
-    --cor-planodefundo: #15B392;
-    --cor-caixa:#254336;
+    --cor-planodefundo: #10439F;
+    --cor-caixa:#4F75FF;
 }
 
 * {
@@ -93,4 +93,8 @@ a {
     width: 50%; /* Largura total da caixa */
     height: 50%; /* Altura total da caixa */
     z-index: -1; /* Coloca a imagem atrás da caixa */
+}
+
+.botao__download:hover{
+    background-color: #F27BBD;
 }
